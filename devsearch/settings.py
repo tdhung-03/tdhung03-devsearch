@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-wc4ujh@z@m8)sj6$9318*z$-#o91*j7+at3ip+j3s2xn*(&81x"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "tdhung03-devsearch.herokuapp.com"]
 
@@ -198,5 +198,5 @@ AWS_ACCESS_KEY_ID = "AKIASSAP4YUQNKXTVB2A"
 AWS_SECRET_ACCESS_KEY = "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"
 AWS_STORAGE_BUCKET_NAME = 'tdhung03-devsearch-bucket'
 
-# if os.getcwd() == '/app':
-#     DEBUG = False
+if os.getcwd() == '/app':
+    DEBUG = False
